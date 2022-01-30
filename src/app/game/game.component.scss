@@ -1,0 +1,31 @@
+:host {
+    width: 3000px;
+    height: 2000px;
+    position: absolute;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    // background-image: url(../../assets/bg.jpeg);
+    background-image: linear-gradient(180deg, rgb(137, 42, 150), rgb(17, 2, 19));
+    &.glitch {
+        background-image: url(../../assets/glitch.webp);
+    }
+
+    .welcome {
+        color: white;
+        position: fixed;
+        margin: 0 auto;
+        /* display: flex; */
+        top: 200px;
+        left: 600px;
+        width: 547px;
+        height: 294px;
+        background-color: rgba(0, 0, 0, 0.281);
+        border: 1px solid white;
+
+        .select {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}

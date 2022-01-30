@@ -1,0 +1,22 @@
+<div *ngIf="gameOver" class="game-over">
+    <h1>GAME OVER</h1>
+    <small style="opacity: 0.5;font-size: 18px;">{{!hungry? 'you died of hunger ':'you exploded into pieces!' }}</small>
+    <br>
+    <button (click)="startNewGame()">try again</button>
+</div>
+
+<header>
+    <div class="score">
+        <h3>
+            {{score | number}} <span style="font-size: 16px; opacity: 0.5;">[hi-score {{hiScore | number}}]</span>
+        </h3>
+    </div>
+
+
+    <h1 class="title">Sliter BUG 👾</h1>
+
+    <div class="progress">
+        🍎
+        <progress id="file" [value]="hungry" max="100"></progress>
+    </div>
+</header>

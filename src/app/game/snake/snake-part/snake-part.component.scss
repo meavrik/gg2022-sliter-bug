@@ -1,0 +1,48 @@
+:host {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(0, 60, 255);
+    // border: 2px solid rgb(180, 125, 23);
+    width: 40px;
+    height: 40px;
+    display: block;
+    box-shadow: inset -4px -6px 3px 2px rgb(0 0 0 / 22%);
+    user-select: none;
+
+    &.odd {
+        // background-color: rgb(167, 120, 33);
+        background-color: rgb(6, 44, 168);
+    }
+    .head {
+        position: absolute;
+        z-index: 9999;
+        transform: scale(3);
+        top: 4px;
+        left: 15px;
+    }
+
+    .points {
+        width: 100px;
+        position: absolute;
+        z-index: 9999;
+        display: flex;
+        text-align: center;
+        color: gold;
+        font-size: 20px;
+        top: -20px;
+        animation: move;
+        animation-fill-mode: forwards;
+        animation-duration: 2s;
+    }
+}
+
+@keyframes move {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,47 @@
+:host {
+    color: white;
+    position: fixed;
+    // padding: 0 20px;
+    display: flex;
+    z-index: 99999;
+    width: 100vw;
+
+    header {
+        width: calc(100%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+
+        background-color: rgba(0, 0, 0, 0.2);
+        height: 80px;
+        padding: 0 20px;
+        .score {
+            display: flex;
+            justify-content: start;
+            font-size: 30px;
+        }
+
+        .title {
+            color: white;
+            text-shadow: 0px 8px #ff0000;
+            font-size: 40px;
+        }
+
+        .progress {
+            align-items: center;
+            display: flex;
+        }
+    }
+
+    .game-over {
+        h1 {
+            margin: 100px 0 0 0;
+        }
+        font-size: 40px;
+
+        font-weight: 100;
+        width: 100%;
+        position: absolute;
+    }
+}

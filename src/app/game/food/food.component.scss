@@ -1,0 +1,31 @@
+:host {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: white;
+
+    .apple {
+        width: 20px;
+        border-radius: 50%;
+        height: 20px;
+        line-height: 20px;
+        transform: scale(0.1);
+        animation-fill-mode: forwards;
+        animation-name: grow;
+        animation-timing-function: ease-in-out;
+        animation-duration: 300ms;
+    }
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(0);
+    }
+    70% {
+        transform: scale(4);
+    }
+    100% {
+        transform: scale(2);
+    }
+}

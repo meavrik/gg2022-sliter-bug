@@ -1,0 +1,2 @@
+<app-snake-part [type]="head" *ngFor="let part of parts;let i=index" [type]="part?.type || ''" [index]="i"
+    [transform]="moveArr[i]" [points]="gotPoints"></app-snake-part>

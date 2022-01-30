@@ -1,0 +1,9 @@
+<div *ngIf="index === 0" class="head">
+    {{type || '😍'}}
+
+
+</div>
+
+<div *ngIf="points && index === 0" class="points">
+    {{points | number}}$
+</div>
