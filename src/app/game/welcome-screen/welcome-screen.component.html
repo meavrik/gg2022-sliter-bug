@@ -1,0 +1,9 @@
+<h2>Eat! - Not Die!</h2>
+
+Selct your color
+
+<div class="container">
+    <div *ngFor="let color of colors;let i=index" class="select" [style.background]="color"
+        [class.selected]="(i===selected)" (click)="onSelect(i)"></div>
+</div>
+<button (click)="startNewGame()">START</button>

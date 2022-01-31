@@ -1,16 +1,7 @@
 <app-hud [gameOver]="gameOver" [score]="score" [hiScore]="hiScore" [hungry]="hungry"></app-hud>
 <app-preview-screen></app-preview-screen>
 
-
-<div class="welcome" *ngIf="!(apples$ | async)?.length">
-
-    <h2>Eat - Not Die</h2>
-
-    Selct your color
-
-    <div class="select"></div>
-    <button (click)="startNewGame()">START</button>
-</div>
+<app-welcome-screen *ngIf="!(apples$ | async)?.length"></app-welcome-screen>
 
 
 <ng-container *ngIf="(apples$ | async) as apples">

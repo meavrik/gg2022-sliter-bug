@@ -8,6 +8,7 @@ import { GameComponent } from './game/game.component';
 import { FoodComponent } from './game/food/food.component';
 import { HudComponent } from './game/hud/hud.component';
 import { PreviewScreenComponent } from './game/preview-screen/preview-screen.component';
+import { WelcomeScreenComponent } from './game/welcome-screen/welcome-screen.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { PreviewScreenComponent } from './game/preview-screen/preview-screen.com
     SnakePartComponent,
     FoodComponent,
     HudComponent,
-    PreviewScreenComponent
+    PreviewScreenComponent,
+    WelcomeScreenComponent
   ],
   imports: [
     BrowserModule,

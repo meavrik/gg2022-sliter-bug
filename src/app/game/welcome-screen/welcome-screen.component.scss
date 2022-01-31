@@ -1,0 +1,35 @@
+:host {
+    color: white;
+    position: fixed;
+    margin: 0 auto;
+    /* display: flex; */
+    top: 200px;
+    left: 600px;
+    width: 547px;
+    height: 294px;
+    background-color: rgba(0, 0, 0, 0.281);
+    border: 1px solid white;
+    text-align: center;
+    display: block;
+    .container {
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px auto;
+        border: 2px solid rgba(255, 255, 255, 0);
+        box-sizing: border-box;
+        .select {
+            cursor: pointer;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+
+            &:active,
+            &:hover,
+            &.selected {
+                border: 2px solid white;
+            }
+        }
+    }
+}

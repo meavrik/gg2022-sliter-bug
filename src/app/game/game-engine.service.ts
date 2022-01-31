@@ -24,11 +24,13 @@ const allFoods = [
   providedIn: 'root'
 })
 export class GameEngineService {
+
   boardSize = { width: 3000, height: 2000 };
   readonly gameOver$ = new Subject<void>();
   readonly newGame$ = new Subject<void>();
   readonly boardSize$ = new BehaviorSubject(this.boardSize)
   readonly apples$ = new BehaviorSubject<IFood[]>([])
+  readonly snakeColor$ = new BehaviorSubject<string>('blue');
 
   constructor() { }
 
@@ -40,6 +42,10 @@ export class GameEngineService {
     if (this.apples$.getValue().length < 50) {
       this.apples$.next([...this.apples$.getValue(), this.getNewFood()])
     }
+  }
+
+  setColor(color: string) {
+    this.snakeColor$.next(color)
   }
 
   removeFood(food: IFood) {
