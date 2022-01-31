@@ -47,6 +47,8 @@ export class SnakeComponent implements OnInit, OnChanges {
     height: this.gameEngine.boardSize.height
   }
 
+  readonly color$ = this.gameEngine.snakeColor$
+
   private _currentLocation: { x: number, y: number } = { x: 0, y: 0 }
 
   @Input() hungry!: number;

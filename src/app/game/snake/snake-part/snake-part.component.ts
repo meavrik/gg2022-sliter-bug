@@ -8,6 +8,7 @@ import { Component, HostBinding, Input, OnInit } from '@angular/core';
 export class SnakePartComponent implements OnInit {
   @Input() @HostBinding('style.transform') transform: any
   @Input() @HostBinding('class.body') index: number = 0;
+  @Input() @HostBinding('style.background-color') color = 'rgb(0, 60, 255)';
   @Input() type: string = '';
   @Input() points: number = 0;
   @HostBinding('style.zIndex') zIndex: number = 0;

@@ -1,7 +1,7 @@
 :host {
     position: absolute;
     border-radius: 50%;
-    background-color: rgb(0, 60, 255);
+    // background-color: rgb(0, 60, 255);
     // border: 2px solid rgb(180, 125, 23);
     width: 40px;
     height: 40px;
@@ -11,7 +11,7 @@
 
     &.odd {
         // background-color: rgb(167, 120, 33);
-        background-color: rgb(6, 44, 168);
+        filter: brightness(50%);
     }
     .head {
         position: absolute;
